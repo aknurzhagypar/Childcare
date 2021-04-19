@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".content.favorite_articles.FavoriteArticlesFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/farticlesRv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintTop_toBottomOf="@+id/categoriesRv"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:gravity="center"
+        android:text="Избранных статьей пока нет"
+        android:id="@+id/empty_articles"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+
+</FrameLayout>
