@@ -23,7 +23,8 @@ import org.jetbrains.anko.support.v4.alert
 import org.jetbrains.anko.support.v4.toast
 
 
-class SurveyFragment() : Fragment() {
+class
+SurveyFragment() : Fragment() {
 
 
     private val adapter: SurveyAdapter = SurveyAdapter(this)
@@ -36,6 +37,7 @@ class SurveyFragment() : Fragment() {
     private var surveyId: Int? = null
 
     companion object {
+
         @JvmStatic
         fun newInstance(groupId: Int, mouth: Int, groupName: String) = SurveyFragment().apply {
             arguments = Bundle().apply {

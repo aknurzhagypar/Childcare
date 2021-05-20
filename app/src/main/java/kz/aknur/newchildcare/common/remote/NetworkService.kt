@@ -1,6 +1,7 @@
 package kz.aknur.newchildcare.common.remote
 
 import com.google.gson.JsonArray
+import kz.aknur.newchildcare.content.calendar.model.EventsResponse
 import kz.aknur.newchildcare.content.child.add.models.ChildAddRequest
 import kz.aknur.newchildcare.content.child.list.ChildListResponse
 import kz.aknur.newchildcare.content.home.articles.details.ArticleResponse
@@ -112,4 +113,10 @@ interface NetworkService {
     suspend fun getCardCategories(
         @Header("Authorization") token: String
     ): Response<CardCategoriesResponse>
+
+
+    @GET(EndPoints.GET_EVENTS)
+    suspend fun getEvents(
+        @Header("Authorization") token: String
+    ): Response<EventsResponse>
 }

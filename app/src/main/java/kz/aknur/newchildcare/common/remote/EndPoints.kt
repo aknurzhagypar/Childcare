@@ -17,4 +17,5 @@ object EndPoints {
     const val GET_FAVOURITE_ARTICLES = "users/fav"
     const val GET_MY_CHILD_LIST = "children/my"
     const val GET_CARD_CATEGORIES = "categories/type/CARD"
+    const val GET_EVENTS = "events/my"
 }
